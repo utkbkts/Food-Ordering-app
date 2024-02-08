@@ -1,6 +1,7 @@
 import React from 'react'
 import { hero } from "../data/NavList";
 import "../Sass/home.scss"
+import logo from "../images/hero.png"
 const Hero = () => {
   return (
     <div className="hero">
@@ -21,7 +22,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="img">
-          <img src="/src/images/hero.png" alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className="details">
           {hero.map((item,index)=>(
