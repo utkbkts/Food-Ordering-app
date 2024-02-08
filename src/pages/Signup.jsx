@@ -7,6 +7,9 @@ import Spinner from "../utils/Spinner";
 import Slider from "react-slick";
 import useSignUpWithEmailAndPassword from "../hook/useSignUp";
 import toast from "react-hot-toast";
+import img from "../images/blog/b1.jpg"
+import img2 from "../images/blog/b2.jpg"
+import img3 from "../images/blog/b3.jpg"
 const Signup = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
@@ -130,13 +133,13 @@ const Signup = () => {
       <div className="slider-login">
         <Slider ref={sliderRef} {...settings}>
           <div className="image">
-            <img className="" src={"/src/images/blog/b1.jpg"} />
+            <img className="" src={img} />
           </div>
           <div className="image">
-            <img className="" src={"/src/images/blog/b2.jpg"} />
+            <img className="" src={img2} />
           </div>
           <div className="image">
-            <img className="" src={"/src/images/blog/b3.jpg"} />
+            <img className="" src={img3} />
           </div>
         </Slider>
       </div>
