@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
+import img from "../images/customer/c1.png"
+import img2 from "../images/dishes/d1.png"
+import img3 from "../images/offer_bg.11cee991aea9f19b4cb6.jpg"
 const SectionAdvert = () => {
   return (
     <div className="Wrapper">
       <div className="image-a">
         <div>
-          <img src="/src/images/offer_bg.11cee991aea9f19b4cb6.jpg" alt="" />
+          <img src={img3} alt="" />
         </div>
         <div className="image-b">
           <span>Special Kombo Pack</span>
@@ -87,7 +89,7 @@ const SectionAdvert = () => {
         <div className="customer__a">
           <div className="__a">
             <div className="__b">
-              <img src="/src/images/customer/c1.png" alt="" />
+              <img src={img} alt="" />
             </div>
             <div className="__c">
               <p>
@@ -127,7 +129,7 @@ const SectionAdvert = () => {
           <div className="__b">
             <span>20/12/2024</span>
             <span>BEST BURGER IN YOUR SOCIAL</span>
-            <img src="/src/images/dishes/d1.png" alt="" />
+            <img src={img2} alt="" />
             <div className="__c">
               <span><FaLongArrowAltRight /></span>
               <span>READ MORE</span>
@@ -136,7 +138,7 @@ const SectionAdvert = () => {
           <div className="__b">
             <span>20/12/2024</span>
             <span>BEST BURGER IN YOUR SOCIAL</span>
-            <img src="/src/images/dishes/d1.png" alt="" />
+            <img src={img2} alt="" />
             <div className="__c">
               <span><FaLongArrowAltRight /></span>
               <span>READ MORE</span>
@@ -145,7 +147,7 @@ const SectionAdvert = () => {
           <div className="__b">
             <span>20/12/2024</span>
             <span>BEST BURGER IN YOUR SOCIAL</span>
-            <img src="/src/images/dishes/d1.png" alt="" />
+            <img src={img2} alt="" />
             <div className="__c">
               <span><FaLongArrowAltRight /></span>
               <span>READ MORE</span>

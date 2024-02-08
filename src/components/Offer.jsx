@@ -4,6 +4,10 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import "../Sass/offer.scss";
 import { GiChickenOven } from "react-icons/gi";
+import img from "../images/menu/menu1.png"
+import img2 from "../images/menu/menu2.png"
+import img3 from "../images/menu/menu3.png"
+import img4 from "../images/menu/menu4.png"
 
 const Offer = () => {
   return (
@@ -38,7 +42,7 @@ const Offer = () => {
                   Ratione, fugit.
                 </span>
                 <span>
-                  <img src="/src/images/menu/menu1.png" alt="" />
+                  <img src={img} alt="" />
                 </span>
               </div>
             </div>
@@ -54,7 +58,7 @@ const Offer = () => {
                   Ratione, fugit.
                 </span>
                 <span>
-                  <img src="/src/images/menu/menu1.png" alt="" />
+                  <img src={img4} alt="" />
                 </span>
               </div>
             </div>
@@ -70,7 +74,7 @@ const Offer = () => {
                   Ratione, fugit.
                 </span>
                 <span>
-                  <img src="/src/images/menu/menu1.png" alt="" />
+                  <img src={img2} alt="" />
                 </span>
               </div>
             </div>
@@ -86,7 +90,7 @@ const Offer = () => {
                   Ratione, fugit.
                 </span>
                 <span>
-                  <img src="/src/images/menu/menu1.png" alt="" />
+                  <img src={img3} alt="" />
                 </span>
               </div>
             </div>
