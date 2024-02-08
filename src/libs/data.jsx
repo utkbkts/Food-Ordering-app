@@ -10,7 +10,7 @@ import instagram from "../images/instagram_2111463.png"
 export const TeamData = [
   {
     id: 1,
-    img:{logo},
+    img:logo,
     title: "Zoe Fisher",
     exprience: "12 YEAR EXPERIENCE",
     socialmedia: [
@@ -22,7 +22,7 @@ export const TeamData = [
   },
   {
     id: 2,
-    img: {logo2},
+    img: logo2,
     title: "Cecil Wood",
     exprience: "18 YEAR EXPERIENCE",
     socialmedia: [
@@ -34,7 +34,7 @@ export const TeamData = [
   },
   {
     id: 3,
-    img: {logo3},
+    img: logo3,
     title: "Shane Harvey",
     exprience: "6 YEAR EXPERIENCE",
     socialmedia: [
