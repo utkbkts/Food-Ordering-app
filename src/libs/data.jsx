@@ -1,7 +1,7 @@
 export const TeamData = [
   {
     id: 1,
-    img: "/src/images/team/t1.png",
+    img: "../images/team/t1.png",
     title: "Zoe Fisher",
     exprience: "12 YEAR EXPERIENCE",
     socialmedia: [
@@ -13,7 +13,7 @@ export const TeamData = [
   },
   {
     id: 2,
-    img: "/src/images/team/t2.png",
+    img: "../images/team/t2.png",
     title: "Cecil Wood",
     exprience: "18 YEAR EXPERIENCE",
     socialmedia: [
@@ -25,7 +25,7 @@ export const TeamData = [
   },
   {
     id: 3,
-    img: "/src/images/team/t3.png",
+    img: "../images/team/t3.png",
     title: "Shane Harvey",
     exprience: "6 YEAR EXPERIENCE",
     socialmedia: [

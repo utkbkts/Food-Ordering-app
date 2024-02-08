@@ -1,5 +1,6 @@
 import React from "react";
 import "../Sass/footer.scss";
+import img from "../images/blog/b1.jpg"
 const Footer = () => {
   return (
     <div className="Footer">
@@ -54,7 +55,7 @@ const Footer = () => {
         <div className="__d">
           <span className="title">RECENT Product</span>
           <div className="recent">
-            <img src="/src/images/blog/b1.jpg" alt="" />
+            <img src={img} alt="" />
             <div className="best">
               <span className="titles">BEST BURGER IN YOUR SOCI...</span>
               <span className="desc">JAN 15, 2022</span>
