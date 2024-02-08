@@ -1,38 +1,47 @@
+import logo from "../images/team/t1.png"
+import logo2 from "../images/team/t2.png"
+import logo3 from "../images/team/t3.png"
+import twitter from "../images/twitter.png"
+import facebook from "../images/facebook.png"
+import youtube from "../images/youtube_1384060.png"
+import instagram from "../images/instagram_2111463.png"
+
+
 export const TeamData = [
   {
     id: 1,
-    img: "../images/team/t1.png",
+    img:{logo},
     title: "Zoe Fisher",
     exprience: "12 YEAR EXPERIENCE",
     socialmedia: [
-        { type: "/src/images/twitter.png", link: "https://twitter.com/username1" },
-        { type: "/src/images/facebook.png", link: "https://facebook.com/username1" },
-        { type: "/src/images/youtube_1384060.png", link: "https://youtube.com/username1" },
-        { type: "/src/images/instagram_2111463.png", link: "https://instagram.com/username1" },
+        { type: twitter, link: "https://twitter.com/username1" },
+        { type: facebook, link: "https://facebook.com/username1" },
+        { type: youtube, link: "https://youtube.com/username1" },
+        { type: instagram, link: "https://instagram.com/username1" },
       ],
   },
   {
     id: 2,
-    img: "../images/team/t2.png",
+    img: {logo2},
     title: "Cecil Wood",
     exprience: "18 YEAR EXPERIENCE",
     socialmedia: [
-      { type: "/src/images/twitter.png", link: "https://twitter.com/username2" },
-      { type: "/src/images/facebook.png", link: "https://facebook.com/username2" },
-      { type: "/src/images/youtube_1384060.png", link: "https://youtube.com/username2" },
-      { type: "/src/images/instagram_2111463.png", link: "https://instagram.com/username2" },
+      { type: twitter, link: "https://twitter.com/username2" },
+      { type: facebook, link: "https://facebook.com/username2" },
+      { type: youtube, link: "https://youtube.com/username2" },
+      { type: instagram, link: "https://instagram.com/username2" },
     ],
   },
   {
     id: 3,
-    img: "../images/team/t3.png",
+    img: {logo3},
     title: "Shane Harvey",
     exprience: "6 YEAR EXPERIENCE",
     socialmedia: [
-        { type: "/src/images/twitter.png", link: "https://twitter.com/username3" },
-        { type: "/src/images/facebook.png", link: "https://facebook.com/username3" },
-        { type: "/src/images/youtube_1384060.png", link: "https://youtube.com/username3" },
-        { type: "/src/images/instagram_2111463.png", link: "https://instagram.com/username3" },
+        { type: twitter, link: "https://twitter.com/username3" },
+        { type: facebook, link: "https://facebook.com/username3" },
+        { type: youtube, link: "https://youtube.com/username3" },
+        { type: instagram, link: "https://instagram.com/username3" },
       ],
   },
 ];
