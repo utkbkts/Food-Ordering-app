@@ -1,0 +1,78 @@
+@import "../Sass/variables.scss";
+@import "../Sass/mediaQuery.scss";
+.Profile {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 1%;
+    .profile__a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .profile__b {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            @include md{
+                justify-content: center;
+            }
+            button {
+                padding: 10px 15px;
+                border: none;
+                background-color: orange;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                &.active{
+                    background: black;
+                }
+            }
+        }
+    }
+    .profile-page{
+        display: flex;
+        width: 500px;
+        margin-top: 2rem;
+        @include md{
+            width: 100%;
+            padding: 15px;
+        }
+        .__a{
+            display: flex;
+                gap: 3rem;
+                width: 100%;
+                @include md{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+              .image{
+                @include md{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                }
+              }
+            img{
+                width: 70px;
+            }
+            .form-wrap{
+                width: 100%;
+                
+                .input-display{
+                    display: flex;
+                    gap: 1rem;
+                    @include md{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+.users-page {
+    width: 100%;
+    overflow-x: scroll;
+}

@@ -1,0 +1,365 @@
+@import "/src/Sass/variables.scss";
+@import "/src/Sass/mediaQuery.scss";
+.Wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    .image-a {
+        position: relative;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        .image-b {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 10px;
+            margin-top: 10%;
+            @include lg {
+                margin-top: 0;
+            }
+            span:nth-child(1) {
+                font-family: $font-satisfy;
+                color: orange;
+                font-size: 25px;
+                @include md {
+                    font-size: 15px;
+                }
+            }
+            span:nth-child(2) {
+                font-family: $font-poppins;
+                font-weight: bold;
+                font-size: 45px;
+                color: white;
+                @include lg {
+                    font-size: 25px;
+                }
+                @include md {
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-family: $font-poppins;
+                font-weight: bold;
+                font-size: 17px;
+                color: darkgray;
+                @include md {
+                    display: none;
+                }
+            }
+        }
+    }
+    .row {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
+        span {
+            text-align: center;
+            &:nth-child(1) {
+                font-family: $font-satisfy;
+                color: orange;
+                font-size: 25px;
+            }
+            &:nth-child(2) {
+                font-family: $font-poppins;
+                font-weight: bold;
+                font-size: 45px;
+            }
+        }
+    }
+    .team-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: wrap;
+
+        .teamdata {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            background: #faf7f2;
+            padding: 10px;
+            .image-a-team {
+                border-radius: 50%;
+                width: 100%;
+            }
+
+            .title-a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-a {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .social-b {
+                    width: 50px;
+                    height: 50px;
+                    background: #d1d0ce;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all 1s ease;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &:hover {
+                        border-radius: 50%;
+                        background-color: orange;
+                    }
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .customer {
+        height: 100vh;
+        position: relative;
+
+        @include lg {
+            display: flex;
+            width: 100%;
+            height: 70vh;
+            background-color: black;
+
+            align-items: center;
+        }
+        .row {
+            width: 70%;
+            height: 70vh;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: black;
+
+            @include lg {
+                width: 100%;
+                flex: 1;
+                background-color: transparent;
+            }
+
+            .__a {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-top: 10%;
+                span:nth-child(1) {
+                    font-family: $font-satisfy;
+                    color: orange;
+                    font-size: 25px;
+                    @include md {
+                        font-size: 15px;
+                    }
+                }
+                span:nth-child(2) {
+                    font-family: $font-poppins;
+                    font-weight: bold;
+                    font-size: 45px;
+                    color: white;
+                    @include lg {
+                        font-size: 25px;
+                    }
+                    @include md {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .__b {
+                color: white;
+                width: 70%;
+                @include lg {
+                    width: 100%;
+                }
+            }
+            .customer__b {
+                display: flex;
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                align-items: center;
+                white-space: nowrap;
+                gap: 1rem;
+                @include lg {
+                    bottom: 10rem;
+                    position: static;
+                    white-space: wrap;
+                }
+                .__a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 0;
+                    padding: 15px;
+
+                    span {
+                        font-size: 20px !important;
+                        color: black;
+                        @include lg {
+                            color: white;
+                        }
+                    }
+                    .number {
+                        color: orange;
+                        font-weight: bold;
+                        font-family: $font-poppins;
+                        font-size: 30px !important;
+                    }
+                }
+                .__b {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 15px;
+
+                    span {
+                        color: black;
+                        font-size: 20px !important;
+                        @include lg {
+                            color: white;
+                        }
+                    }
+                    .number {
+                        color: orange;
+                        font-weight: bold;
+                        font-family: $font-poppins;
+                        font-size: 30px !important;
+                    }
+                }
+                .__c {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 15px;
+
+                    span {
+                        color: black;
+                        font-size: 20px !important;
+                        @include lg {
+                            color: white;
+                        }
+                    }
+                    .number {
+                        color: orange;
+                        font-weight: bold;
+                        font-family: $font-poppins;
+                        font-size: 30px !important;
+                    }
+                }
+            }
+        }
+        .customer__a {
+            position: absolute;
+            top: 50%;
+            right: 25%;
+            @include md{
+                display: none !important;
+            }
+            @include lg {
+                flex: 1;
+                position: static;
+                justify-content: center;
+                display: flex;
+            }
+            .__a {
+                display: flex;
+                flex-direction: column;
+                background: #d1d0ce;
+                width: 300px;
+                height: auto;
+                padding: 15px;
+                .__b {
+                }
+                .__c {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .title {
+                        color: black;
+                        font-weight: bold;
+                    }
+                    .descp {
+                        color: green;
+                    }
+
+                    .__d {
+                        span {
+                            color: orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-blog {
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 2rem;
+        .__a {
+            display: flex;
+            margin-top: 5%;
+            gap: 1rem;
+            flex-wrap: wrap;
+            @include md{
+                justify-content: center;
+            }
+            .__b {
+                background: #faf7f2;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                span {
+                    &:nth-child(1) {
+                        color: orange;
+                    }
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 300px;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                .__c {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    span {
+                        color: green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

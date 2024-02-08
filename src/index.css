@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: black;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+.ant-table-cell img{
+  width: 70px;
+}
+.ant-table-wrapper{
+  margin-top: 2rem;
+}
+html::-webkit-scrollbar-track {
+  background: #332D2D;        /* color of the tracking area */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #332D2D;  /* creates padding around scroll thumb */
+}
+.sweet-loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .ant-form-item-explain-error{
+    text-align: left !important;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+  }
+  .ant-row{
+    flex-direction: column;
+    display: flex;
+   
+  } 
+  @media(max-width:820px){
+    .ant-row{
+      flex-direction: column;
+      display: flex;
+     
+    } 
+  }
+  #normal_login{
+    gap: 2rem;
+  }

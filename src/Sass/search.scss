@@ -1,0 +1,23 @@
+.search-container{
+    max-width: 1200px;
+    margin: auto;
+
+    .wrap-search{
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+        padding: 10px;
+        flex-direction: column;
+        h1{
+
+            span{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}

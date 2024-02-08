@@ -1,0 +1,113 @@
+@import "/src/Sass/variables.scss";
+@import "/src/Sass/mediaQuery.scss";
+.Offer-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    .offer{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: auto;
+        .offer-wrapper{
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            @include md{
+                justify-content: center;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+        }
+        .container{
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            .row{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+              span{
+                text-align: center;
+                &:nth-child(1){
+                    font-family: $font-satisfy;
+                    color: orange;
+                    font-size: 25px;
+                }
+                &:nth-child(2){
+                    font-family: $font-poppins;
+                    font-weight: bold;
+                    font-size: 45px;
+                }
+              }
+            }
+            .content{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+                margin-top: 5%;
+                @include mdmax{
+                    grid-template-columns: repeat(1,1fr);
+                }
+            }
+            .container-wrapper{
+                display: flex;
+                flex-direction: column;
+                transition: all .5s ease;
+                width: 400px;
+                padding: 10px;
+                cursor: pointer;
+                @include lg{
+                    width: 100%;
+                }
+                .wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .number{
+                        color: #fff;
+                        font-size: 50px;
+                       
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                    }
+                }
+                .wrapper1{
+                    display: flex;
+                    flex-direction: column; 
+                    gap: 1rem; 
+
+                    .text{
+                        font-family: $font-poppins;
+                        font-size: 30px;
+                    }
+                    .text-content{
+                        color: darkgray;
+
+                    }
+                }
+                &:hover{
+                    background: #FF9433;
+                    color: white;
+                }
+                &:hover .number{
+                    opacity: .2;
+                }
+                   &:hover .text-content{
+                    color: white;
+
+                }
+            }
+        }
+    }
+}
