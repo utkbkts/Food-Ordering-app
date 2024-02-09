@@ -50,6 +50,10 @@ const Headerprofile = () => {
               </li>
             ))}
           </ul>
+          <div className="wrapper-header-mobile">
+            <Link to={"/login"}>Sign In</Link>
+            <Link to={"/signup"}>Sign up</Link>
+          </div>
           {authUser && <button onClick={handlesignout}>Sign Out</button>}
         </div>
       </div>
