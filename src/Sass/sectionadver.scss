@@ -207,6 +207,9 @@
                     position: static;
                     white-space: wrap;
                 }
+                @include md{
+                    gap: 0px !important;
+                }
                 .__a {
                     display: flex;
                     flex-direction: column;
@@ -219,6 +222,10 @@
                         color: black;
                         @include lg {
                             color: white;
+                        }
+                        @include md{
+                            font-size: 13px !important;
+
                         }
                     }
                     .number {
@@ -240,6 +247,10 @@
                         @include lg {
                             color: white;
                         }
+                        @include md{
+                            font-size: 13px !important;
+
+                        }
                     }
                     .number {
                         color: orange;
@@ -259,6 +270,10 @@
                         font-size: 20px !important;
                         @include lg {
                             color: white;
+                        }
+                        @include md{
+                            font-size: 13px !important;
+
                         }
                     }
                     .number {
